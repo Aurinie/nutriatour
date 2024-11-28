@@ -1,0 +1,116 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el scroll horizontal */
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* Enlaces de navegación */
+.navbar {
+    background-color: orange; /* Fondo naranja para la barra de navegación */
+    color: white; /* Texto blanco */
+}
+
+.navbar .nav-link {
+    color: white; /* Enlaces de navegación en blanco */
+}
+
+.navbar .nav-link:hover {
+    color: lightgray; /* Cambio de color al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background-color: orange; /* Fondo naranja para el pie de página */
+    color: white; /* Texto blanco */
+    padding: 20px 0;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botón de modo oscuro/claro */
+#toggleDarkMode {
+    background-color: white; /* Botón con fondo blanco */
+    color: orange; /* Iconos naranjas */
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+#toggleDarkMode:hover {
+    background-color: lightgray; /* Fondo más claro al pasar el mouse */
+}
+
+/* Dropdown */
+.dropdown-menu {
+    background-color: orange; /* Fondo del menú desplegable */
+    color: white;
+}
+
+.dropdown-menu .dropdown-item {
+    color: white; /* Elementos del menú en blanco */
+}
+
+.dropdown-menu .dropdown-item:hover {
+    background-color: lightgray; /* Fondo más claro para hover */
+    color: black; /* Texto oscuro */
+}
+
+.container-fluid {
+    padding: 0; /* Elimina padding interno */
+    margin: 0; /* Elimina márgenes externos */
+}
+
+/* Banner styles */
+.container-fluid img {
+    width: 100%; /* La imagen ocupa el 100% del ancho del contenedor */
+    height: auto; /* Mantiene las proporciones de la imagen */
+    display: block; /* Elimina cualquier espacio blanco extra */
+    margin: 0;
+    padding: 0;
+}
+
+img,
+.banner,
+section {
+    margin: 0;
+    padding: 0;
+    display: block; /* Elimina el espacio en línea de imágenes */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    /* Ajustes para pantallas medianas y pequeñas */
+    .navbar {
+        font-size: 14px;
+    }
+
+    .container-fluid img {
+        width: 100%; /* Aseguramos que siempre ocupe el ancho del contenedor */
+    }
+}
+
+@media (max-width: 576px) {
+    /* Ajustes específicos para pantallas pequeñas */
+    .navbar {
+        padding: 0.5rem;
+    }
+
+    .container-fluid img {
+        max-height: 300px; /* Limita la altura en dispositivos pequeños */
+        object-fit: cover; /* Recorta la imagen si es necesario */
+    }
+}
